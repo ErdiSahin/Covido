@@ -1,0 +1,18 @@
+<form method="POST">
+    <label for="section_name">Section Name:</label>
+    <input type="text" id="section_name" name="section_name" required>
+
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" required></textarea>
+
+    <input type="submit" value="Save">
+</form>a 
+
+<!-- List existing content for editing -->
+{% for content in content_list %}
+    <form method="POST">
+        <input type="hidden" name="section_name" value="{{ content.section_name }}">
+        <textarea name="content">{{ content.content }}</textarea>
+        <input type="submit" value="Update">
+    </form>
+{% endfor %}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f7f6;
+    }
+    .sidebar {
+        width: 250px;
+        height: 100vh;
+        background: #333;
+        color: #fff;
+        position: fixed;
+    }
+    .content {
+        margin-left: 250px;
+        padding: 20px;
+    }
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .card-header {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .card-stats {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-stats div {
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .chart {
+        width: 100%;
+        height: 200px;
+        background: url('chart-placeholder.png') no-repeat center center;
+        background-size: contain;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <!-- Sidebar content -->
+</div>
+
+<div class="content">
+    <div class="card">
+        <div class="card-header">
+            <h2>Dashboard</h2>
+        </div>
+        <div class="card-stats">
+            <div>
+                <p>Customers</p>
+                <h3>345k</h3>
+            </div>
+            <div>
+                <p>Revenue</p>
+                <h3>$2.4k</h3>
+            </div>
+            <div>
+                <p>Purchases</p>
+                <h3>43</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Latest Transactions</h3>
+        <table>
+            <tr>
+                <th>Order</th>
+                <th>Product</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+            <!-- Repeat the row below for each transaction -->
+            <tr>
+                <td>17371705</td>
+                <td>Volt Premium Bootstrap 5 Dashboard</td>
+                <td>john.doe@gmail.com</td>
+                <td>€611.11</td>
+                <td>Aug 31 2020</td>
+                <td><button>View</button></td>
+            </tr>
+            <!-- ... other rows ... -->
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Traffic Last 6 Months</h3>
+        <div class="chart">
+            <!-- Chart placeholder - Use a chart library like Chart.js -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
